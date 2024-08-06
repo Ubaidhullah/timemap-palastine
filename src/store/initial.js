@@ -84,7 +84,7 @@ const initial = {
         contentHeight: isSmallLaptop ? 160 : 200,
         width_controls: 100,
       },
-      range: [new Date(2001, 2, 23, 12), new Date(2021, 2, 23, 12)],
+      range: [new Date(2014, 2, 23, 12), new Date(2025, 2, 23, 12)],
       rangeLimits: [new Date(1, 1, 1, 1), new Date()],
       zoomLevels: copy[language].timeline.zoomLevels || [
         { label: "20 years", duration: 10512000 },
@@ -101,13 +101,31 @@ const initial = {
       isCover: true,
       isCardstack: true,
       isInfopopup: false,
-      isIntropopup: false,
+      isIntropopup: true,
       isShowingSites: true,
     },
     cover: {
-      title: "project title",
-      description:
-        "A description of the project goes here.\n\nThis description may contain markdown.\n\n# This is a large title, for example.\n\n## Whereas this is a slightly smaller title.\n\nCheck out docs/custom-covers.md in the [Timemap GitHub repo](https://github.com/forensic-architecture/timemap) for more information around how to specify custom covers.",
+      title: "Palestine Timemap",
+      description: `
+        This project aims to document and visualize the timeline of events in Palestine, particularly focusing on the ongoing conflict and its devastating impacts since October 2023.
+
+        ## Project Overview
+        The timemap provides a detailed chronological account of incidents, categorized by events, regions, and affected communities. It seeks to offer a comprehensive and accessible resource for understanding the scale and nature of the conflict, the human rights violations, and the humanitarian crisis resulting from the ongoing violence.
+
+        ## Features
+        - **Interactive Map**: Explore events geographically to see where incidents have occurred.
+        - **Timeline**: View the sequence of events over time to understand the progression of the conflict.
+        - **Categories**: Filter events by different categories such as civilian casualties, infrastructure damage, and humanitarian responses.
+        - **Narratives**: Read detailed narratives that provide context and personal stories behind the events.
+
+        ## Purpose
+        This timemap is created to raise awareness, provide reliable information, and support efforts towards justice and peace. By documenting the atrocities and their impacts, we hope to contribute to a more informed public discourse and advocate for the protection of human rights.
+
+        ## How to Use
+        Navigate through the map to explore specific incidents, use the timeline to see how events have unfolded, and dive into the narratives for in-depth stories.
+
+        Check out docs/custom-covers.md in the [Timemap GitHub repo](https://github.com/forensic-architecture/timemap) for more information around how to specify custom covers.
+      `,
       exploreButton: "EXPLORE",
     },
     toolbar: {
